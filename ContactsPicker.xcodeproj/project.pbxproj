@@ -15,6 +15,11 @@
 		C6506A732397789100C90C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6506A712397789100C90C9A /* LaunchScreen.storyboard */; };
 		C6506A7E2397789200C90C9A /* ContactsPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6506A7D2397789200C90C9A /* ContactsPickerTests.swift */; };
 		C6506A892397789200C90C9A /* ContactsPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6506A882397789200C90C9A /* ContactsPickerUITests.swift */; };
+		C6506A9A239778E600C90C9A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6506A99239778E600C90C9A /* TableViewCell.swift */; };
+		C6506A9E2397794C00C90C9A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6506A9C2397794C00C90C9A /* ContactTableViewCell.swift */; };
+		C6506A9F2397794C00C90C9A /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6506A9D2397794C00C90C9A /* ContactTableViewCell.xib */; };
+		C6506AA22397797300C90C9A /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6506AA12397797300C90C9A /* ContactModel.swift */; };
+		C6506AA923978E4900C90C9A /* ProtocolOrientedProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6506AA823978E4900C90C9A /* ProtocolOrientedProgramming.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,14 @@
 		C6506A842397789200C90C9A /* ContactsPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6506A882397789200C90C9A /* ContactsPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPickerUITests.swift; sourceTree = "<group>"; };
 		C6506A8A2397789200C90C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6506A99239778E600C90C9A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C6506A9C2397794C00C90C9A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		C6506A9D2397794C00C90C9A /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		C6506AA12397797300C90C9A /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		C6506AA52397807000C90C9A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		C6506AA62397807900C90C9A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		C6506AA72397808500C90C9A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C6506AA823978E4900C90C9A /* ProtocolOrientedProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolOrientedProgramming.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +112,10 @@
 		C6506A652397788D00C90C9A /* ContactsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				C6506AA32397803A00C90C9A /* Resource */,
+				C6506AA02397795E00C90C9A /* Model */,
+				C6506A9B2397793300C90C9A /* Views */,
+				C6506A96239778AA00C90C9A /* Helpers */,
 				C6506A662397788D00C90C9A /* AppDelegate.swift */,
 				C6506A682397788D00C90C9A /* SceneDelegate.swift */,
 				C6506A6A2397788D00C90C9A /* ViewController.swift */,
@@ -126,6 +143,50 @@
 				C6506A8A2397789200C90C9A /* Info.plist */,
 			);
 			path = ContactsPickerUITests;
+			sourceTree = "<group>";
+		};
+		C6506A96239778AA00C90C9A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6506A99239778E600C90C9A /* TableViewCell.swift */,
+				C6506AA823978E4900C90C9A /* ProtocolOrientedProgramming.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C6506A9B2397793300C90C9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6506A9C2397794C00C90C9A /* ContactTableViewCell.swift */,
+				C6506A9D2397794C00C90C9A /* ContactTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6506AA02397795E00C90C9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6506AA12397797300C90C9A /* ContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6506AA32397803A00C90C9A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C6506AA42397804500C90C9A /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C6506AA42397804500C90C9A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C6506AA52397807000C90C9A /* Roboto-Medium.ttf */,
+				C6506AA72397808500C90C9A /* Roboto-Regular.ttf */,
+				C6506AA62397807900C90C9A /* Roboto-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6506A9F2397794C00C90C9A /* ContactTableViewCell.xib in Resources */,
 				C6506A732397789100C90C9A /* LaunchScreen.storyboard in Resources */,
 				C6506A702397789100C90C9A /* Assets.xcassets in Resources */,
 				C6506A6E2397788D00C90C9A /* Main.storyboard in Resources */,
@@ -260,6 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6506A6B2397788D00C90C9A /* ViewController.swift in Sources */,
+				C6506AA923978E4900C90C9A /* ProtocolOrientedProgramming.swift in Sources */,
+				C6506A9E2397794C00C90C9A /* ContactTableViewCell.swift in Sources */,
+				C6506AA22397797300C90C9A /* ContactModel.swift in Sources */,
+				C6506A9A239778E600C90C9A /* TableViewCell.swift in Sources */,
 				C6506A672397788D00C90C9A /* AppDelegate.swift in Sources */,
 				C6506A692397788D00C90C9A /* SceneDelegate.swift in Sources */,
 			);
@@ -435,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L7MDNZGGA;
 				INFOPLIST_FILE = ContactsPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L7MDNZGGA;
 				INFOPLIST_FILE = ContactsPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
